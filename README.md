@@ -1,1 +1,0 @@
-# finance-common-framework
