@@ -1,15 +1,16 @@
 package com.tigercub.commonframework.exception;
 
-import com.tigercub.commonframework.model.enums.ResultCodeEnum;
+import com.tigercub.commonframework.enums.ResultCodeEnum;
 import lombok.Getter;
 
 /**
  * <p>
  * 基础异常类
+ * 所有自定义异常的父类
  * </p>
  *
  * @author qingfeng
- * @since 2026/1/17
+ * @since 2026/01/17
  */
 @Getter
 public class BaseException extends RuntimeException {
