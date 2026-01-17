@@ -1,4 +1,3 @@
 com.tigercub.commonframework.config.mybatis.MybatisAutoConfiguration
 com.tigercub.commonframework.config.swagger.SwaggerAutoConfiguration
 com.tigercub.commonframework.config.web.GlobalExceptionHandler
-com.tigercub.commonframework.filter.RequestMDCFilter
