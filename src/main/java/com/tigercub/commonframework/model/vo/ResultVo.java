@@ -1,6 +1,6 @@
 package com.tigercub.commonframework.model.vo;
 
-import com.tigercub.commonframework.model.enums.ResultCodeEnum;
+import com.tigercub.commonframework.enums.ResultCodeEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

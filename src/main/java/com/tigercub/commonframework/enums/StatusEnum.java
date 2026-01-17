@@ -1,4 +1,4 @@
-package com.tigercub.commonframework.model.enums;
+package com.tigercub.commonframework.enums;
 
 import com.tigercub.commonframework.validation.EnumCode;
 import lombok.AllArgsConstructor;

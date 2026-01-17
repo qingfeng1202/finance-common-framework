@@ -1,7 +1,7 @@
 package com.tigercub.commonframework.filter;
 
-import com.tigercub.commonframework.model.constant.MDCConstant;
-import com.tigercub.commonframework.model.enums.LoginHeaderEnum;
+import com.tigercub.commonframework.constant.MDCConstant;
+import com.tigercub.commonframework.enums.LoginHeaderEnum;
 import jakarta.servlet.Filter;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
