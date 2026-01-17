@@ -1,12 +1,12 @@
 package com.tigercub.commonframework.exception;
 
-import com.tigercub.commonframework.enums.ResultCodeEnum;
+import com.tigercub.commonframework.model.enums.ResultCodeEnum;
 import lombok.Getter;
 
 /**
- * <p>
  * 基础异常类
- * 所有自定义异常的父类
+ * <p>
+ * 所有自定义异常的基类
  * </p>
  *
  * @author qingfeng
@@ -41,6 +41,12 @@ public class BaseException extends RuntimeException {
         super(customMessage);
         this.code = resultCodeEnum.getCode();
         this.message = customMessage;
+    }
+
+    public BaseException(Integer code, String message, Throwable cause) {
+        super(message, cause);
+        this.code = code;
+        this.message = message;
     }
 
 }
