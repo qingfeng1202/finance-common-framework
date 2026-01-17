@@ -2,7 +2,7 @@ package com.tigercub.commonframework.util;
 
 
 
-import com.tigercub.commonframework.model.constant.DateFormatConstant;
+import com.tigercub.commonframework.constant.DateFormatConstant;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;

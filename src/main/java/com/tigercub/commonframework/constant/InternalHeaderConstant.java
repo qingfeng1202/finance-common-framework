@@ -1,4 +1,4 @@
-package com.tigercub.commonframework.model.constant;
+package com.tigercub.commonframework.constant;
 
 public interface InternalHeaderConstant {
 

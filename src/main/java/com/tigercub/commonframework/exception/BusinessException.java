@@ -1,6 +1,6 @@
 package com.tigercub.commonframework.exception;
 
-import com.tigercub.commonframework.model.enums.ResultCodeEnum;
+import com.tigercub.commonframework.enums.ResultCodeEnum;
 
 /**
  * <p>

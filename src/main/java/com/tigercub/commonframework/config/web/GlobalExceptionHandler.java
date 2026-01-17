@@ -2,7 +2,7 @@ package com.tigercub.commonframework.config.web;
 
 import com.tigercub.commonframework.exception.BaseException;
 import com.tigercub.commonframework.exception.BusinessException;
-import com.tigercub.commonframework.model.enums.ResultCodeEnum;
+import com.tigercub.commonframework.enums.ResultCodeEnum;
 import com.tigercub.commonframework.model.vo.ResultVo;
 import jakarta.validation.ConstraintViolation;
 import jakarta.validation.ConstraintViolationException;
