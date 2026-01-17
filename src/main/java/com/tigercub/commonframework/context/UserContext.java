@@ -1,6 +1,6 @@
 package com.tigercub.commonframework.context;
 
-import com.finance.bfe.model.dto.CurrentUserDTO;
+import com.tigercub.commonframework.model.dto.CurrentUserDTO;
 import lombok.extern.slf4j.Slf4j;
 
 /**

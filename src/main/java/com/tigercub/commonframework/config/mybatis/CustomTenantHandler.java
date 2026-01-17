@@ -1,7 +1,7 @@
 package com.tigercub.commonframework.config.mybatis;
 
 import com.baomidou.mybatisplus.extension.plugins.handler.TenantLineHandler;
-import com.finance.bfe.context.UserContext;
+import com.tigercub.commonframework.context.UserContext;
 import net.sf.jsqlparser.expression.Expression;
 import net.sf.jsqlparser.expression.LongValue;
 
