@@ -43,7 +43,8 @@ finance-common-framework/
 │   │   └── StringLocks.java    # 字符串锁工具
 │   └── validation/             # 通用验证
 └── src/main/resources/
-    ├── application-default.properties    # 框架默认配置
+    ├── application-default.properties    # 框架默认配置 (Properties格式)
+    ├── application-framework.yml         # 框架默认配置 (YAML格式)
     ├── examples/                       # 配置示例
     │   ├── application-example.properties  # Properties格式示例
     │   └── application-example.yml         # YAML格式示例
