@@ -51,8 +51,8 @@ import java.util.StringJoiner;
  * warn-threshold: 500       # 慢SQL阈值，单位毫秒（默认500ms）
  * <p>
  *
- * @Author qingfeng
- * @Date 2025/9/28
+ * @author qingfeng
+ * @since 2025/9/28
  */
 @Slf4j
 @Component

@@ -32,8 +32,8 @@ import org.springframework.context.annotation.Configuration;
  * - MyBatis-Plus会自动识别所有Interceptor类型的Bean并注册
  * - 不需要手动创建SqlSessionFactory，避免破坏MyBatis-Plus的自动配置
  *
- * @Author qingfeng
- * @Date 2025/9/28
+ * @author qingfeng
+ * @since 2025/9/28
  */
 @Slf4j
 @Configuration

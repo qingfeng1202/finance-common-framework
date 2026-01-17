@@ -73,7 +73,6 @@ public @interface EnumValue {
      *   <li>只有在此列表中的枚举值才允许使用</li>
      *   <li>不能与 excludeValues 同时使用</li>
      * </ul>
-     * </p>
      * <p>
      * 示例：
      * <pre>
@@ -88,7 +87,6 @@ public @interface EnumValue {
      * // 使用 - 只允许 ACTIVE 和 PENDING
      * allowValues = {"ACTIVE", "PENDING"}
      * </pre>
-     * </p>
      */
     String[] allowValues() default {};
 
@@ -101,7 +99,6 @@ public @interface EnumValue {
      *   <li>列表中的枚举值不允许使用</li>
      *   <li>不能与 allowValues 同时使用</li>
      * </ul>
-     * </p>
      * <p>
      * 示例：
      * <pre>
@@ -115,7 +112,6 @@ public @interface EnumValue {
      * // 使用 - 排除 NONE
      * excludeValues = {"NONE"}
      * </pre>
-     * </p>
      */
     String[] excludeValues() default {};
 
