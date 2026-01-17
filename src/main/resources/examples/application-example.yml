@@ -1,0 +1,170 @@
+# 通用框架配置示例 (YAML格式)
+# 以下配置展示了框架支持的所有配置项及其说明
+
+# 通用框架配置
+framework:
+  common:
+    # 启用框架自动配置
+    enabled: true
+    
+    # 启用全局异常处理器
+    enable-global-exception-handler: true
+    
+    # 启用MyBatis相关配置
+    enable-mybatis: true
+    
+    # 启用Swagger相关配置
+    enable-swagger: true
+    
+    # 启用安全相关配置
+    enable-security: true
+    
+    # 启用缓存相关配置
+    enable-cache: true
+    
+    # 启用监控相关配置
+    enable-monitoring: true
+    
+    # SQL日志配置
+    sql-logger:
+      # 启用SQL执行日志
+      enabled: true
+      # 是否显示参数替换后的SQL
+      show-parameters: true
+      # SQL最大显示长度
+      max-sql-length: 1000
+      # 慢SQL阈值（毫秒）
+      warn-threshold: 500
+    
+    # 安全配置
+    security:
+      # JWT配置
+      jwt:
+        # JWT密钥（生产环境请使用强密钥）
+        secret: yourStrongSecretKeyHereChangeThisImmediately
+        # JWT过期时间（分钟，默认24小时）
+        expiration: 1440
+        # JWT刷新提前时间（分钟，默认2小时）
+        refresh-before: 120
+      # 密码加密配置
+      password:
+        # Argon2参数配置
+        argon2:
+          # 内存成本参数
+          memory: 65536
+          # 时间成本参数
+          time: 2
+          # 并行度参数
+          threads: 1
+    
+    # 缓存配置
+    cache:
+      # 是否启用本地缓存
+      local-enabled: true
+      # 本地缓存过期时间（秒）
+      local-expire-after-write: 3600
+      # 是否启用Redis缓存
+      redis-enabled: false
+      # Redis缓存过期时间（秒）
+      redis-expire-after-write: 3600
+    
+    # 监控配置
+    monitoring:
+      # 是否启用指标收集
+      metrics-enabled: true
+      # 是否启用健康检查
+      health-check-enabled: true
+      # 是否启用链路追踪
+      trace-enabled: false
+      # 慢操作阈值（毫秒）
+      slow-operation-threshold: 1000
+
+# Swagger配置
+framework:
+  swagger:
+    # 启用Swagger
+    enabled: true
+    # 文档标题
+    title: API文档
+    # 文档描述
+    description: API接口文档
+    # 文档版本
+    version: 1.0.0
+    # 上下文路径
+    context-path: http://localhost:8080
+
+# MyBatis配置
+mybatis:
+  # SQL日志配置
+  sql-logger:
+    enabled: true
+    show-parameters: true
+    max-sql-length: 1000
+    warn-threshold: 500
+  # MyBatis配置
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+    lazy-loading-enabled: false
+    multiple-result-sets-enabled: true
+    use-column-label: true
+    use-generated-keys: true
+    auto-mapping-behavior: partial
+    default-statement-timeout: 25000
+    default-fetch-size: 100
+    local-cache-scope: session
+    jdbc-type-for-null: NULL
+    lazy-load-trigger-methods: "equals,clone,hashCode,toString"
+
+# 数据库连接池配置（HikariCP）
+spring:
+  datasource:
+    hikari:
+      # 连接超时时间（毫秒）
+      connection-timeout: 30000
+      # 空闲连接超时时间（毫秒）
+      idle-timeout: 600000
+      # 连接最大生命周期（毫秒）
+      max-lifetime: 1800000
+      # 最大连接池大小
+      maximum-pool-size: 20
+      # 最小空闲连接数
+      minimum-idle: 5
+      # 连接池名称
+      pool-name: HikariPool
+      # 连接重试次数
+      max-connect-retries: 3
+      # 连接泄漏检测阈值（毫秒）
+      leak-detection-threshold: 60000
+
+# Nacos配置
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+      config:
+        server-addr: localhost:8848
+
+# Actuator配置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "health,info,metrics,prometheus"
+  endpoint:
+    health:
+      show-details: when-authorized
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+
+# 日志配置
+logging:
+  level:
+    com.tigercub.commonframework: INFO
+    org.springframework.web: INFO
+    org.springframework.security: INFO
+    org.springframework.transaction: DEBUG
+    org.mybatis: DEBUG
