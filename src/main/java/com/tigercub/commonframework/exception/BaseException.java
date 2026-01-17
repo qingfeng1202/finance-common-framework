@@ -20,7 +20,7 @@ public class BaseException extends RuntimeException {
     private final Integer code;
 
     /**
-     * 错误消息
+     * 错误信息
      */
     private final String message;
 
@@ -30,22 +30,16 @@ public class BaseException extends RuntimeException {
         this.message = message;
     }
 
-    public BaseException(ResultCodeEnum resultCode) {
-        super(resultCode.getMessage());
-        this.code = resultCode.getCode();
-        this.message = resultCode.getMessage();
+    public BaseException(ResultCodeEnum resultCodeEnum) {
+        super(resultCodeEnum.getMessage());
+        this.code = resultCodeEnum.getCode();
+        this.message = resultCodeEnum.getMessage();
     }
 
-    public BaseException(ResultCodeEnum resultCode, String message) {
-        super(message);
-        this.code = resultCode.getCode();
-        this.message = message;
-    }
-
-    public BaseException(Integer code, String message, Throwable cause) {
-        super(message, cause);
-        this.code = code;
-        this.message = message;
+    public BaseException(ResultCodeEnum resultCodeEnum, String customMessage) {
+        super(customMessage);
+        this.code = resultCodeEnum.getCode();
+        this.message = customMessage;
     }
 
 }
