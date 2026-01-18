@@ -28,6 +28,10 @@ public class CustomTenantHandler implements TenantLineHandler {
 
     @Override
     public boolean ignoreTable(String tableName) {
+        if(tableName.startsWith("bcr_")) {
+            return true;
+        }
+
         if ("bfe_user_token".equals(tableName)) {
             return true;
         }
