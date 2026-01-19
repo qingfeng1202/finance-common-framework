@@ -194,7 +194,7 @@ framework.swagger.enabled=true
 # 文档标题
 framework.swagger.title=API文档
 # 文档描述
-framework.swagger.description=API接口文档
+framework.swagger.description=API文档
 # 文档版本
 framework.swagger.version=1.0.0
 # 上下文路径

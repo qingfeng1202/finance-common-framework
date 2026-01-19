@@ -25,6 +25,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>21</java.version>
 
+        <spring-boot.version>3.5.9</spring-boot.version>
         <spring-cloud-alibaba.version>2025.0.0.0</spring-cloud-alibaba.version>
         <micrometer.version>1.15.0</micrometer.version>
         <mybatis.version>3.0.4</mybatis.version>
